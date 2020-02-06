@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/timeline.css">
+  </head>
+
+  <body>
+
+    <div id="timeline"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/timeline.js"></script>
+    <script>
+
+window.onload = function () {
+
+plays = [
+  {
+    "evidence": "The play contains passages which seem to borrow from John Lyly's Midas (1589), meaning it could not have been written prior to 1589. Additionally, Stanley Wells argues that the scenes involving more than four characters, \"betray an uncertainty of technique suggestive of inexperience.\" As such, the play is considered to be one of the first Shakespeare composed upon arriving in London (Roger Warren, following E.A.J. Honigmann, suggests he may have written it prior to his arrival) and, as such, he lacked theatrical experience. This places the date of composition as most likely somewhere between 1589 and 1591, by which time it is known he was working on the Henry VI plays",
+    "published": "First Folio (1623)",
+    "performance": "adaptation by Benjamin Victor performed at David Garrick's Theatre Royal, Drury Lane in 1762. Earliest known performance of straight Shakespearean text at Royal Opera House in 1784, although because of the reference to the play in Palladis Tamia, we know it was definitely performed in Shakespeare's day.",
+    "credit": "Michael Webb",
+    "media": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Rembrandt_Christ_in_the_Storm_on_the_Lake_of_Galilee.jpg",
+    "date": "1900",
+    "genre": "",
+    "caption": "Rock Valley College Studio Theatre Complete Works Project February 1988",
+    "play": "Modern Risk Management : The Evolution of a Paradigm"
+  },
+  
+  {
+    "evidence": "The play contains passages which seem to borrow from John Lyly's Midas (1589), meaning it could not have been written prior to 1589. Additionally, Stanley Wells argues that the scenes involving more than four characters, \"betray an uncertainty of technique suggestive of inexperience.\" As such, the play is considered to be one of the first Shakespeare composed upon arriving in London (Roger Warren, following E.A.J. Honigmann, suggests he may have written it prior to his arrival) and, as such, he lacked theatrical experience. This places the date of composition as most likely somewhere between 1589 and 1591, by which time it is known he was working on the Henry VI plays",
+    "published": "First Folio (1623)",
+    "performance": "adaptation by Benjamin Victor performed at David Garrick's Theatre Royal, Drury Lane in 1762. Earliest known performance of straight Shakespearean text at Royal Opera House in 1784, although because of the reference to the play in Palladis Tamia, we know it was definitely performed in Shakespeare's day.",
+    "credit": "Michael Webb",
+    "media": "http://www.azquotes.com/picture-quotes/quote-there-is-no-useful-information-contained-in-historical-price-movements-of-securities-louis-bachelier-64-25-77.jpg",
+    "date": "1900",
+    "genre": "Theory-related",
+    "caption": "Photo and quote by Louis Bachelier",
+    "play": "Louis Bachilier"
+  },  
+  
+  {
+    "evidence": "During the 1920s in the United States, the stock and real estate markets were experiencing a boom in their activities. Millions of American citizens started depositing their saving in the commercial banks. These banks however were using this money as a collateral against the bets in stock and financial markets. Citizens had no legal protection against what commercial banks were doing and the separation between investment and commercial banks were absent. Kuhn Loeb, Lehman Brothers, Goldman Sachs, Brown Brothers Harriman and of course Jp Morgan & Company were some of the most recognized names of what had become an American elite. In the 1920, the financial power of these Wall Street bankers grew in an astonishing way, gaining economic and political power.",
+    "published": "possible version of play published in quarto in 1594 as A Pleasant Conceited Historie, called The taming of a Shrew (republished in 1596 and 1607). Play as it exists today first published in the First Folio (1623) as The Taming of the Shrew.",
+    "performance": "According to Philip Henslowe's diary, a play called The Tamynge of A Shrowe was performed at Newington Butts Theatre on 13 June 1594. This could have been either the 1594 A Shrew or the Shakespearean The Shrew, but as the Admiral's Men and the Lord Chamberlain's Men were sharing the theatre at the time, and as such Shakespeare himself would have been there, scholars tend to assume that it was The Shrew. The Shakespearean version was definitely performed at court before King Charles I and Queen Henrietta Maria on 26 November 1633, where it was described as being \"liked'.",
+    "credit": "Financier JP Morgan",
+    "media": "https://i.pinimg.com/originals/b2/fc/ee/b2fceed57a59d725238b32f0dacd6193.jpg",
+    "date": "1920",
+    "genre": "Market-Related Factors",
+    "play": "Growing Power of Financial Institutions"
+  },
+  {
+    "evidence": "During the 1920s, the US financial markets, in particular the securities market, were mainly self-regulated. According to Dale (1996, p.60-61), the New York Stock Exchange imposed capital requirements on its member firms. Firms held a percentage of 10% of customer receivables and proprietary positions as capital. By 1929, the New York Stock Exchange had established well defined capital requirements. According to Holton(), this requirement was the beginning to what will evolve later to become capital requirements for financial firms. It also evolved into the Value at Risk model that financial institutions use these days. ",
+    "published": "possible version of play published in quarto in 1594 as A Pleasant Conceited Historie, called The taming of a Shrew (republished in 1596 and 1607). Play as it exists today first published in the First Folio (1623) as The Taming of the Shrew.",
+    "performance": "According to Philip Henslowe's diary, a play called The Tamynge of A Shrowe was performed at Newington Butts Theatre on 13 June 1594. This could have been either the 1594 A Shrew or the Shakespearean The Shrew, but as the Admiral's Men and the Lord Chamberlain's Men were sharing the theatre at the time, and as such Shakespeare himself would have been there, scholars tend to assume that it was The Shrew. The Shakespearean version was definitely performed at court before King Charles I and Queen Henrietta Maria on 26 November 1633, where it was described as being \"liked'.",
+    "credit": "Image of Wall Street",
+    "media": "http://s01.s3c.es/imag/_v0/665x400/e/4/5/23_Wall_Street_New_York.jpg",
+    "date": "1920-1930",
+    "genre": "Institutional Factors",
+    "play": "Self-Regulating Markets"
+  },
+  
+
+  {
+    "evidence": "During October 1929, the stock market in the United States collapsed, losing close to 20% of its value . American banks were severely hit by that crash who experienced heavy loses on proprietary stock investments. Driven by the fear that banks will not be able to guarantee money in their accounts, depositors panic causing ‘run’ on banks. The result was that thousands of US banks failed.",
+    "published": "possible version of play published in quarto in 1594 as A Pleasant Conceited Historie, called The taming of a Shrew (republished in 1596 and 1607). Play as it exists today first published in the First Folio (1623) as The Taming of the Shrew.",
+    "performance": "According to Philip Henslowe's diary, a play called The Tamynge of A Shrowe was performed at Newington Butts Theatre on 13 June 1594. This could have been either the 1594 A Shrew or the Shakespearean The Shrew, but as the Admiral's Men and the Lord Chamberlain's Men were sharing the theatre at the time, and as such Shakespeare himself would have been there, scholars tend to assume that it was The Shrew. The Shakespearean version was definitely performed at court before King Charles I and Queen Henrietta Maria on 26 November 1633, where it was described as being \"liked'.",
+    "credit": "John Burns",
+    "media": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Bank_Run_c1933.jpg",
+    "date": "1929,09",
+    "genre": "Theory-related",
+    "play": "Crisis of 1929"
+  },    
+  
+  {
+    "evidence":"The London Economic Conference was a meeting of representatives of 66 nations from June 12 to July 27, 1933 at the Geological Museum in London. Its purpose was to win agreement on measures to fight the Great Depression, revive international trade, and stabilize currency exchange rates.The Conference was torpedoed by US President Franklin Roosevelt in early July when he denounced currency stabilization. (source:Wikipedia)",
+    "published": "possible version of play published in quarto in 1594 as A Pleasant Conceited Historie, called The taming of a Shrew (republished in 1596 and 1607). Play as it exists today first published in the First Folio (1623) as The Taming of the Shrew.",
+    "performance": "According to Philip Henslowe's diary, a play called The Tamynge of A Shrowe was performed at Newington Butts Theatre on 13 June 1594. This could have been either the 1594 A Shrew or the Shakespearean The Shrew, but as the Admiral's Men and the Lord Chamberlain's Men were sharing the theatre at the time, and as such Shakespeare himself would have been there, scholars tend to assume that it was The Shrew. The Shakespearean version was definitely performed at court before King Charles I and Queen Henrietta Maria on 26 November 1633, where it was described as being \"liked'.",
+    "credit": "French delegation to the London conference",
+    "media": "https://static01.nyt.com/images/2009/04/01/business/01leonhardt.650.jpg",
+    "date": "1933,06",
+    "genre": "Institutional Factors",
+    "play": "London Economic Conference"
+  },  
+  
+  {
+    "evidence":"As a response to the great depression,a series of federal programs, known as The New Deal were created. As part of the new deal, a financial reform legislation was known as Glass-Steagall Act. According to this act, any investment house cannot engage in deposit activities and commercial banks cannot deal in securities underlying and dealing. Glass Steagall Act established deposit insurance. Chase National Bank and the National City Bank both dissolved their securities businesses. Lehman Brothers dissolved its depository business. The First Bank of Boston split off its securities business to form First Boston. JP Morgan elected to be a commercial bank, but a number of managers departed to form the investment bank Morgan Stanley. The 1933 act focused mainly on primary markets for securities where the goal was to ensure that information related to publicly offered securities is disclosed. ",
+    "published": "possible version of play published in quarto in 1594 as A Pleasant Conceited Historie, called The taming of a Shrew (republished in 1596 and 1607). Play as it exists today first published in the First Folio (1623) as The Taming of the Shrew.",
+    "performance": "According to Philip Henslowe's diary, a play called The Tamynge of A Shrowe was performed at Newington Butts Theatre on 13 June 1594. This could have been either the 1594 A Shrew or the Shakespearean The Shrew, but as the Admiral's Men and the Lord Chamberlain's Men were sharing the theatre at the time, and as such Shakespeare himself would have been there, scholars tend to assume that it was The Shrew. The Shakespearean version was definitely performed at court before King Charles I and Queen Henrietta Maria on 26 November 1633, where it was described as being \"liked'.",
+    "credit": "French delegation to the London conference",
+    "media": "https://media.newyorker.com/photos/59098009c14b3c606c109d6a/master/w_727,c_limit/Lemann-What-Would-Be-Wrong-with-Trump-Restoring-Glass-Steagall.jpg",
+    "date": "1933,06",
+    "genre": "Institutional Factors",
+    "play": "Glass–Steagall legislation"
+  },   
+  
+  {
+    "evidence":"This act targeted secondary markets to ensure that securities traders (brokers and dealers) act in the interest of investors. According to this act, the Securities and Exchange Commission was established as the main regulator of US securities markets. The SEC was given authority over securities firms which included investment banks. The SEA imposed a modest capital requirement on securities firms (Holton and check the literature). No indebtness in excess of 2,000% of firms’net capital. This requirement limited the amount of liquidity available to firms, but guaranteed that firms had less money to engage in stock market speculation.",
+    "published": "possible version of play published in quarto in 1594 as A Pleasant Conceited Historie, called The taming of a Shrew (republished in 1596 and 1607). Play as it exists today first published in the First Folio (1623) as The Taming of the Shrew.",
+    "performance": "According to Philip Henslowe's diary, a play called The Tamynge of A Shrowe was performed at Newington Butts Theatre on 13 June 1594. This could have been either the 1594 A Shrew or the Shakespearean The Shrew, but as the Admiral's Men and the Lord Chamberlain's Men were sharing the theatre at the time, and as such Shakespeare himself would have been there, scholars tend to assume that it was The Shrew. The Shakespearean version was definitely performed at court before King Charles I and Queen Henrietta Maria on 26 November 1633, where it was described as being \"liked'.",
+    "credit": "French delegation to the London conference",
+    "media": "https://d.ibtimes.co.uk/en/full/1541893/securities-exchange-commission.jpg?w=736&e=96a9d5e604f33fd1709c2a042108cc87",
+    "date": "1934,06",
+    "genre": "Institutional Factors",
+    "play": "Securities Exchange Act. "
+  },  
+  
+  {
+    "evidence":"The Malony act gave Self-Regulation Organizations (SRO) the right to directly oversight securities firms under the supervision of the SEC. SROs came to include NASD and other exchanges. In 1938, the securities exchange act was modified to provide the SEC with the authority to impose its own capital requirements on securities firms. The SEC started to develop what is called Net Capital Rule.",
+    "published": "possible version of play published in quarto in 1594 as A Pleasant Conceited Historie, called The taming of a Shrew (republished in 1596 and 1607). Play as it exists today first published in the First Folio (1623) as The Taming of the Shrew.",
+    "performance": "According to Philip Henslowe's diary, a play called The Tamynge of A Shrowe was performed at Newington Butts Theatre on 13 June 1594. This could have been either the 1594 A Shrew or the Shakespearean The Shrew, but as the Admiral's Men and the Lord Chamberlain's Men were sharing the theatre at the time, and as such Shakespeare himself would have been there, scholars tend to assume that it was The Shrew. The Shakespearean version was definitely performed at court before King Charles I and Queen Henrietta Maria on 26 November 1633, where it was described as being \"liked'.",
+    "credit": "US Congress",
+    "media": "http://www.dagospia.com/img/foto/01-2013/congresso-americano-210075.jpg",
+    "date": "1938",
+    "genre": "Institutional Factors",
+    "play": "Maloney Act"
+  },     
+  
+  {
+    "evidence":"this act gave Self-Regulation Organizations (SRO) the right to directly oversight securities firms under the supervision of the SEC. SROs came to include NASD and other exchanges. In 1938, the securities exchange act was modified to provide the SEC with the authority to impose its own capital requirements on securities firms. The SEC started to develop what is called Net Capital Rule.",
+    "published": "possible version of play published in quarto in 1594 as A Pleasant Conceited Historie, called The taming of a Shrew (republished in 1596 and 1607). Play as it exists today first published in the First Folio (1623) as The Taming of the Shrew.",
+    "performance": "According to Philip Henslowe's diary, a play called The Tamynge of A Shrowe was performed at Newington Butts Theatre on 13 June 1594. This could have been either the 1594 A Shrew or the Shakespearean The Shrew, but as the Admiral's Men and the Lord Chamberlain's Men were sharing the theatre at the time, and as such Shakespeare himself would have been there, scholars tend to assume that it was The Shrew. The Shakespearean version was definitely performed at court before King Charles I and Queen Henrietta Maria on 26 November 1633, where it was described as being \"liked'.",
+    "credit": "French delegation to the London conference",
+    "media": "https://d.ibtimes.co.uk/en/full/1541893/securities-exchange-commission.jpg?w=736&e=96a9d5e604f33fd1709c2a042108cc87",
+    "date": "1938",
+    "genre": "Institutional Factors",
+    "play": "Maloney Act"
+  },   
+  {
+    "evidence":"",
+    "published": "possible version of play published in quarto in 1594 as A Pleasant Conceited Historie, called The taming of a Shrew (republished in 1596 and 1607). Play as it exists today first published in the First Folio (1623) as The Taming of the Shrew.",
+    "performance": "According to Philip Henslowe's diary, a play called The Tamynge of A Shrowe was performed at Newington Butts Theatre on 13 June 1594. This could have been either the 1594 A Shrew or the Shakespearean The Shrew, but as the Admiral's Men and the Lord Chamberlain's Men were sharing the theatre at the time, and as such Shakespeare himself would have been there, scholars tend to assume that it was The Shrew. The Shakespearean version was definitely performed at court before King Charles I and Queen Henrietta Maria on 26 November 1633, where it was described as being \"liked'.",
+    "credit": "French delegation to the London conference",
+    "media": "https://d.ibtimes.co.uk/en/full/1541893/securities-exchange-commission.jpg?w=736&e=96a9d5e604f33fd1709c2a042108cc87",
+    "date": "1938",
+    "genre": "Institutional Factors",
+    "play": "Maloney Act"
+  },    
+];
+timelineData = {
+    headline: "Chronology of Shakespeare's Plays",
+    type: "default",
+    date: []
+};
+plays.forEach(function(play) {
+    var start = play.date;
+    var end = "";
+    if (play.date.indexOf("-") !== -1) {
+        var dates = play.date.split("-");
+        start = dates[0];
+        end = dates[1];
+    }
+    timelineData.date.push({
+        startDate: start,
+        endDate: end,
+        headline: play.play,
+        text: play.evidence,
+        tag: play.genre,
+        asset: {
+            media: play.media,
+            credit: play.credit,
+            caption: play.caption
+        }
+    });
+});
+timelineConfig = {
+        type:       'timeline',
+        width:      '100%',
+        height:     '900',
+        source:     {timeline: timelineData},
+        embed_id:   'timeline'
+};
+timelinejs = new VMM.Timeline('timeline','100%','600px');
+timelinejs.init(timelineConfig);
+
+}
+    </script>
+  </body>
+</html>
